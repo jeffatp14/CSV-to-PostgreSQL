@@ -54,6 +54,13 @@ There are 2 folders and one `main.py` program to make the process works.
    
 3. `main.py`
    The main program for running the ETL. It will run ETL based on earlier configs setup.
-
+4. Program Flow
+   `main.py` will access all necessary classes, functions, or attribute from csv_etl module.
+   - extract the raw files and put it in the cleaner function to clean and remove initial duplicate, it will produce raw dataframe necessary for further manipulation
+   - In the main program, will loop through config files to run all the wanted ETL for every table: fact, dim, and junction.
+   - Config method extract used for fact table, its column did not require any transformation
+   - Config method transform used for dim table, because stars and genre is a list in one row, it will be transformed to be row for each element, and then eliminate the duplicate
+   - Config method junction_sql used for junction table, as the junction table need id from other table, we have to use query to select necessary column and insert to the junction table.
+   
 ## 4. Query
 Both query scripts and its results can be accessed in `query_no_4` folder.
