@@ -40,9 +40,9 @@ if __name__ == "__main__":
             transform.insert_junction_from_query(
                 client.cursor,
                 raw_table='raw_movies',
-                dim_table=config.dim_table,  # e.g. 'dim_genre'
-                junction_table=config.table,  # e.g. 'junction_movies_genre'
-                join_col=config.join_col,  # e.g. 'genre'
+                dim_table=config.dim_table,  
+                junction_table=config.table,  
+                join_col=config.join_col,  
                 fact_id_col=config.columns[0],
                 dim_id_col=config.columns[1]
             )
