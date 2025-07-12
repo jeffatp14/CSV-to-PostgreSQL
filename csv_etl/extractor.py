@@ -21,13 +21,6 @@ def column_exists(cursor, schema, table, column):
     return column_exists
 
 def insert_data(cursor, schema, table, df: pd.DataFrame):
-    # Get data rows as tuples
-    # for row in df.to_numpy():
-    #     for v in row:
-    #         if pd.isna(v):
-    #             data=tuple(None)
-    #         else:
-    #             data=tuple(v)
     data = [tuple(None if pd.isna(v) else v for v in row) for row in df.to_numpy()]
     
     col_list = []

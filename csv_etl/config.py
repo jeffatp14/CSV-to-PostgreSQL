@@ -1,6 +1,9 @@
 import yaml
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv() 
+
 class Config:
     def __init__ (self, config_path):
        
@@ -11,10 +14,8 @@ class Config:
         self.sink_config = config.get('sink', {})
 
         #Sensitive information
-        # self.sink_config['username'] = os.getenv('username')
-        # self.sink_config['password'] = os.getenv('password')
-        self.username = self.sink_config.get("username")
-        self.password = self.sink_config.get("password")
+        self.sink_config['username'] = self.sink_config.get('username')
+        self.sink_config['password'] = os.getenv('password')
 
         #Server connection
         self.host=self.sink_config.get("host")

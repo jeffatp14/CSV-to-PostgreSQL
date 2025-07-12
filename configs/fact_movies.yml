@@ -10,7 +10,7 @@ columns:
 sink:
   host: localhost
   port: 5432 
-  username: ${username}
+  username: postgres
   password: ${password}
   database: CAD_IT
   schema: movies_dw

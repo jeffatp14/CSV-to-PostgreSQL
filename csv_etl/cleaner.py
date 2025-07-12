@@ -60,7 +60,7 @@ class Cleaner():
 
         def clean_float(val):
             try:
-                val = val.replace('$', '').replace('M', '')  # $402.45M → 402.45
+                val = val.replace('$', '').replace('M', '')  # for gross
                 return float(val) if val else None
             except:
                 return None
