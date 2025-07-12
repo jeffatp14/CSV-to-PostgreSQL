@@ -34,8 +34,6 @@ class Transform:
         return df_cleaned
       
     def insert_junction_from_query(self, cursor, raw_table, dim_table, junction_table, join_col, fact_id_col, dim_id_col):
-            # if dim_id_col is None:
-            # dim_id_col = f"{join_col}_id"
 
             query = f"""
             INSERT INTO movies_dw.{junction_table} ({fact_id_col}, {dim_id_col})
