@@ -1,6 +1,5 @@
 # CAD IT Data Engineer Test
-By: Jeffa Triana Putra
-This repository contains answer and documentation for CAD IT Code Test - Data Engineer .
+This repository contains answer and documentation for CAD IT Code Test - Data Engineer by **Jeffa Triana Putra**.
 
 ## 1. Data Modeling
 Based on given datasets about ratings and movie information in '.csv' format, writer designed ERD for conceptual, logical, and physical data model.
