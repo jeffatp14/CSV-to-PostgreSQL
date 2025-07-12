@@ -3,7 +3,7 @@ This repository contains answer and documentation for CAD IT Code Test - Data En
 
 ## 1. Data Modeling
 Based on given datasets about ratings and movie information in  `.csv` format, writer designed ERD for conceptual, logical, and physical data model.
-In the given datasets, there are 9 column, named MOVIES,YEAR,GENRE,RATING,ONE-LINE,STARS,VOTES,RunTime, and Gross. I decomposed the datasets into fact table, dimensional tables, and junction tables. **Fact table** contains measureable fields (year,rating,votes,runtime) and necessary information such as movie name and one-line. **Dimensional table** separated into 4 tables, which contains additional description of the fact table such as: stars, directors, and genre. Junction table will be needed as some of the table relation include **many-to-many relationship**, such as one movie can contain many genre and a particular genre can be in many movies.
+In the given datasets, there are 9 column, named MOVIES,YEAR,GENRE,RATING,ONE-LINE,STARS,VOTES,RunTime, and Gross. Writer decomposed the datasets into fact table, dimensional tables, and junction tables. **Fact table** contains measureable fields (year,rating,votes,runtime) and necessary information such as movie name and one-line. **Dimensional table** separated into 4 tables, which contains additional description of the fact table such as: stars, directors, and genre. Junction table will be needed as some of the table relation include **many-to-many relationship**, such as one movie can contain many genre and a particular genre can be in many movies.
 
 ### Conceptual data model
 shows which table relate to each other
