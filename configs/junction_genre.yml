@@ -1,0 +1,16 @@
+columns:
+  - movie_id
+  - genre_id
+
+sink:
+  host: localhost
+  port: 5432
+  username: ${username}
+  password: ${password}
+  database: CAD_IT
+  schema: movies_dw
+  method: junction_sql
+  table: junction_movies_genre
+  dim_table: dim_genre
+  join_col: genre
+
