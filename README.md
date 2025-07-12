@@ -7,7 +7,7 @@ In the given datasets, there are 9 column, named MOVIES,YEAR,GENRE,RATING,ONE-LI
 
 ### Conceptual data model
 shows which table relate to each other
-![alt text]([https://github.com/jeffatp14/CadITDataEngTest/blob/main/conceptual_data%20model.jpeg](https://github.com/jeffatp14/CadITDataEngTest/blob/main/data_modelling/conceptual_data%20model.jpeg))
+![alt text]([https://github.com/jeffatp14/CadITDataEngTest/blob/main/data_modelling/conceptual_data%20model.jpeg])
 
 ### Logical data model
 shows attribute of each table
