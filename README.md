@@ -11,9 +11,11 @@ shows which table relate to each other
 
 ### Logical data model
 shows attribute of each table
+![alt text](https://github.com/jeffatp14/CadITDataEngTest/blob/main/data_modelling/logical_data%20model.jpeg)
 
 ### Physical data model
 shows detailed attribute of each table such as implemented table name, and its column type
+![alt text](https://github.com/jeffatp14/CadITDataEngTest/blob/main/data_modelling/logical_data%20model.jpeg)
 
 ## 2. Database creation
 I created a schema named movies_dw that contains 8 tables from data modeling before. Table creation query script can be accessed in `query_no_2` folder.
