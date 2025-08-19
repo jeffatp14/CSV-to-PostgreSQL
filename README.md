@@ -1,5 +1,6 @@
-# CAD IT Data Engineer Test
-This repository contains answer and documentation for CAD IT Code Test - Data Engineer by **Jeffa Triana Putra**.
+# CSV-to-PostgreSQL
+This repository contains ETL pipeline for CSV-to-PostgreSQL by **Jeffa Triana Putra**.
+currently fit for movies dataset
 
 ## 1. Data Modeling
 Based on given datasets about ratings and movie information in  `.csv` format, writer designed ERD for conceptual, logical, and physical data model.
@@ -18,7 +19,7 @@ shows detailed attribute of each table such as implemented table name, and its c
 ![alt text](https://github.com/jeffatp14/CadITDataEngTest/blob/main/data_modelling/physical_data%20model.jpeg)
 
 ## 2. Database creation
-Writer created a schema named movies_dw that contains 8 tables from data modeling before. Table creation query script can be accessed in `query_no_2` folder and table result can be seen in `tables` folder.
+Writer created a schema named movies_dw that contains 8 tables from data modeling before. Table creation query script can be accessed in `create_table_query` folder and table result can be seen in `tables` folder.
 
 ## 3. CSV Extractor (csv-postgres)
 CSV Extractor is an ETL tool, it extract CSV from local files and store it in a postgres sink (currently available for this sink). 
@@ -63,4 +64,4 @@ There are 2 folders and one `main.py` program to make the process works.
    - Config method junction_sql used for junction table, as the junction table need id from other table, we have to use query to select necessary column and insert to the junction table.
    
 ## 4. Query
-Both query scripts and its results can be accessed in `query_no_4` folder.
+Both query scripts and its results can be accessed in `query_results` folder.
